@@ -68,7 +68,7 @@ describe('YetuswapFactory', () => {
   it('createPair:gas', async () => {
     const tx = await factory.createPair(...TEST_ADDRESSES)
     const receipt = await tx.wait()
-    expect(receipt.gasUsed).to.eq(2509120)
+    expect(receipt.gasUsed).to.eq(2514327)
   })
 
   it('setFeeTo', async () => {
